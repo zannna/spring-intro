@@ -2,7 +2,7 @@
 ### [Spring framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/)
 
 1. Zainstaluj środowisko IntelliJ IDEA.
-1. Wykonaj `git clone` tego projektu.
+1. Wykonaj *FORK* tego projektu.
 1. Zaimportuj projekt do IntelliJ:
     * wybierz `Import Project` a następnie wybierz plik `build.gradle` w katalogu do którego został sklonowany projekt
     * zaznacz `Use auto-import`
@@ -22,5 +22,4 @@
 1. W pliku `applicationContext.xml` zakomentują linię z `<bean></bean>` i odkomentuj linię z `<component-scan>`.
 1. Do klasy `MyNameMessageService` dodaj adnotację `@Component("messageService")`.
 1. Do klasy `RandomTextMessageService` dodaj właściwą adnotację `@Component` (taką, aby kod działał poprawnie).
-1. Uruchom metodę `main` w klasie `MyApp` i upewnij się, że poprawnie wyświtla Twoje imię.
-1. Stwórz pull request z Twojego brancha do brancha master i zaproś użytkownika `lukasz-gaza-pk` do zrobienia code review.
+1. Wyślij do użytkownika `lukasz-gaza-pk` zaproszenie do współpracy nad projektem (`Settings -> Collaborators`)
