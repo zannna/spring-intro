@@ -2,7 +2,13 @@
 ### [Spring framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/)
 
 1. Zainstaluj środowisko IntelliJ IDEA.
-1. Wykonaj `git clone` tego projektu i zaimportuj go do IntelliJ.
+1. Wykonaj `git clone` tego projektu.
+1. Zaimportuj projekt do IntelliJ:
+    * wybierz `Import Project` a następnie wybierz plik `build.gradle` w katalogu do którego został sklonowany projekt
+    * zaznacz `Use auto-import`
+    * odznacz `Create separate module per source set`
+    * jeżeli pojawia się `NullPointerException` wybierz inną Java JDK w polu `Gradle JVM` (dotyczy komputerów w pracowni)
+    * w przypadku problemów z SDK wybierz odpowienie Java JDK w katalogu `C:\Program Files\Java` (dotyczy komputerów w pracowni)
 1. Stwórz nowy branch zawierający w nazwie Twoje imię i nazwisko.
 1. W pliku `com.example.MyNameMessageServiceTest` w teście `shouldReturnMyNameAsMessage` ustaw wartość zmiennej `expectedMessage` na swoje imię i nazwisko (np. `String expectedMessage = "Jan Kowalski`).
 1. Uruchom test`MyNameMessageServiceTest`, upewnij się że nie działa.
