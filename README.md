@@ -20,6 +20,7 @@
 1. Wypisz na ekran hashCode obu zmiennych - czy są one identyczne?
 1. Zmodyfikuj plik `applicationContext.xml` i zmień scope bean'a `messageService` na taki, aby hashCode powyższych zmiennych był różny.
 1. W pliku `applicationContext.xml` zakomentują linię z `<bean></bean>` i odkomentuj linię z `<component-scan>`.
-1. Do klasy MyNameMessageService dodaj adnotację `@Component("messageService")`.
+1. Do klasy `MyNameMessageService` dodaj adnotację `@Component("messageService")`.
+1. Do klasy `RandomTextMessageService` dodaj właściwą adnotację `@Component` (taką, aby kod działał poprawnie).
 1. Uruchom metodę `main` w klasie `MyApp` i upewnij się, że poprawnie wyświtla Twoje imię.
 1. Stwórz pull request z Twojego brancha do brancha master i zaproś użytkownika `lukasz-gaza-pk` do zrobienia code review.
