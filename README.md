@@ -1,15 +1,10 @@
 # Wprowadznie do Spring Framework
 ### [Spring framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/)
 
+### Spring Dependency Injection - konfiguracja w XML
 1. Zainstaluj środowisko IntelliJ IDEA.
-1. Wykonaj *FORK* tego projektu.
+1. Wykonaj `fork` tego projektu.
 1. Zaimportuj projekt do IntelliJ:
-    * wybierz `Import Project` a następnie wybierz plik `build.gradle` w katalogu do którego został sklonowany projekt
-    * zaznacz `Use auto-import`
-    * odznacz `Create separate module per source set`
-    * jeżeli pojawia się `NullPointerException` wybierz inną Java JDK w polu `Gradle JVM` (dotyczy komputerów w pracowni)
-    * w przypadku problemów z SDK wybierz odpowienie Java JDK w katalogu `C:\Program Files\Java` (dotyczy komputerów w pracowni)
-1. Stwórz nowy branch zawierający w nazwie Twoje imię i nazwisko.
 1. W pliku `com.example.MyNameMessageServiceTest` w teście `shouldReturnMyNameAsMessage` ustaw wartość zmiennej `expectedMessage` na swoje imię i nazwisko (np. `String expectedMessage = "Jan Kowalski`).
 1. Uruchom test`MyNameMessageServiceTest`, upewnij się że nie działa.
 1. Wprowadź odpowiednie zmiany w klasie `com.example.MyNameMessageService` aby naprawić niedziałający test. 
@@ -22,4 +17,8 @@
 1. W pliku `applicationContext.xml` zakomentują linię z `<bean></bean>` i odkomentuj linię z `<component-scan>`.
 1. Do klasy `MyNameMessageService` dodaj adnotację `@Component("messageService")`.
 1. Do klasy `RandomTextMessageService` dodaj właściwą adnotację `@Component` (taką, aby kod działał poprawnie).
-1. Wyślij do użytkownika `lukasz-gaza-pk` zaproszenie do współpracy nad projektem (`Settings -> Collaborators`)
+
+### Spring Dependency Injection - konfiguracja w XML
+1. Skopiuj poprzedni kod albo zmodyfikuj go w taki sposób, aby być w stanie zademonstrować działanie obu zadań bez konieczności komentowania/zmian kodu
+1. Usuń z kodu plik `applicationContext.xml` i zastąp go konfiguracją w Jaview. Podpowiedzi jak to zrobić można znaleźć [tutaj](https://www.tutorialspoint.com/spring/spring_java_based_configuration.htm).
+1. Należy wprowadzić takie zmiany, aby projekt się kompilował i testy przechodziły.
